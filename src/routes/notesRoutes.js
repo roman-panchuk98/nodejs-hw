@@ -3,14 +3,12 @@ import {
   createNote,
   deleteNote,
   getAllNotes,
-  getHomePage,
   getNoteById,
   updateNote,
 } from '../controllers/notesController.js';
 
 const router = Router();
 
-router.get('/', getHomePage);
 router.get('/notes', getAllNotes);
 router.get('/notes/:noteId', getNoteById);
 router.post('/notes', createNote);

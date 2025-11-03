@@ -11,6 +11,7 @@ const noteSchema = Schema(
       type: String,
       required: false,
       trim: true,
+      default: '',
     },
     tag: {
       type: String,
@@ -36,4 +37,4 @@ const noteSchema = Schema(
   },
 );
 
-export const Notes = model('notes', noteSchema);
+export const Note = model('Note', noteSchema);
